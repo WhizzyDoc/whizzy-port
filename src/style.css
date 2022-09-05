@@ -139,7 +139,7 @@ body {
      position: -webkit-sticky;
      top: 0;
      z-index: 1;
-     background:rgba(0, 0, 0, 1)
+     background:black;
  }
  header > div {
      margin: 0;
