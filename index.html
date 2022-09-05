@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>	
+        <Link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Whizzy Hub">
+        <meta name="author" content="Hassan Enny (WhizzyDoc)">
+        <meta name="description" content="A portfolio website for Hassan Eniola">
+        <meta name="keywords" content="Hassan, WhizzyDoc, Hassan Enny, Hassan WhizzyDoc, Enny WhizzyDoc, Hassan Eniola, Hassan Ridwan">
+        <link rel="apple-touch-icon" href="image/logo.jpg">
+        <link rel="shortcut icon" href="image/logo.jpg">
+        <link rel="stylesheet" href="src/style.css">
+        <title>Whizzy Hub</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><span class="one">WHIZZY</span><span class="two">HUB</span></h1>
+            </div>
+            <div class="menu large">
+                <button class="active"><a href="index.html">HOME</a></button>
+                <button><a href="pages/about.html">ABOUT</a></button>
+                <button><a href="pages/service.html">SERVICES</a></button>
+                <button><a href="pages/port.html">PORTFOLIO</a></button>
+                <button><a href="pages/blog.html">BLOGS</a></button>
+                <button><a href="pages/contact.html">CONTACT</a></button>
+            </div>
+            <div class="menu small">
+                <button class="active"><a href="index.html">HOME</a></button>
+                <div class="dd">
+                    <button class="dd-btn" onclick="menu()"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;MENU</button>
+                    <div class="dd-content">
+                        <a href="pages/about.html">ABOUT</a>
+                        <a href="pages/service.html">SERVICES</a>
+                        <a href="pages/port.html">PORTFOLIO</a>
+                        <a href="pages/blog.html">BLOGS</a>
+                        <a href="pages/contact.html">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="pic">
+                <img src="image/whizzy.png">
+            </div>
+            <div class="main">
+                <h5>Hello, I'm</h5>
+                <h3>Hassan Eniola (WhizzyDoc)</h3>
+                <h1>I Am A <span style="color:orangered">Front-End Developer</span></h1>
+                <p>I am a Front-End Web Developer with extensive experience and professionalism.<br>My expertise is to develop any type of Websites, Web Applications and Mobile Applications.</p>
+                <div class="contact">
+                    <div style="background:green;padding:5px;"><a href="https://wa.me/2347011978058" style="font-size:30px"><i class="fa fa-whatsapp"></i></a></div>
+                    <div style="background:blue;padding:5px"><a href="https://m.facebook.com/riliwan.hassan.35" style="font-size:30px;"><i class="fa fa-facebook"></i></a></div>
+                    <div style="background:black;padding:0;"><a href="https://github.com/WhizzyDoc/" style="font-size:40px"><i class="fa fa-github"></i></a></div>
+                    <div style="background:#2196F3;padding:5px;"><a href="https://twitter.com/DocWhizzy?s=09" style="font-size:30px;"><i class="fa fa-twitter"></i></a></div>
+                    <div style="background:lightblue;"><a href="https://www.linkedin.com/in/hassan-ridwan-51563323a"><i class="fa fa-linkedin"></i></a></div>
+                    <div style="background:white;"><a href="mailto:hassanridwan2536@gmail.com" style="color:red;"><i class="fa fa-google-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="carousel" id="slideShowContainer">
+                <a class="prev" onclick="plusSlides(-1)">&lsaquo;</a>
+
+                <div class="mySlides fade3 fade4">
+                    <img class="homePageSlides" id="slidePic1" src="image/1.png">
+                </div>
+
+                <div class="mySlides fade3 fade4">
+                    <img class="homePageSlides" src="image/2.png">
+                </div>
+
+                <div class="mySlides fade3 fade4">
+                    <img class="homePageSlides" src="image/3.png">
+                </div>
+
+                <div class="mySlides fade3 fade4">
+                    <img class="homePageSlides" src="image/4.png">
+                </div>
+
+                <div class="mySlides fade3 fade4">
+                    <img class="homePageSlides" src="image/5.png">
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&rsaquo;</a>
+            </div>
+        </main>
+    
+
+
+        <script src="src/script.js"></script>
+    </body>
