@@ -1,0 +1,107 @@
+.slideShowContainer {
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 250px;
+}
+.slideShowContainer a {
+    display: block;
+}
+.mySlides, .mySlides2 {
+    display: none;
+    width: 85%;
+    height: 100%;
+}
+.mySlides img, .mySlides2 img {
+    width: 100%;
+    height: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    width: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-top: 60px;
+    color: #A371D1;
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.5s ease;
+    border-radius: 0 15px 15px 0;
+    z-index: 1;
+}
+.slide {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.slide a img {
+    width: 30px;
+    height: 30px;
+}
+.lightbox {
+    visibility: hidden;
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+.lightbox:target {
+    visibility: visible;
+}
+.lightbox-content {
+    position: relative;
+    top: 100px;
+    vertical-align: center;
+}
+.lightbox-content img {
+    max-width: 100%;
+    height: auto;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.next {
+    right: 0px;
+    border-radius: 15px 0px 0px 15px;
+}
+.prev:hover, .next:hover {
+    background-color: white;
+}
+.fade3 {
+    position:relative;
+    -webkit-animation:animateright 5s;
+    animation:animateright 5s;
+}
+@-webkit-keyframes animateright {
+    0% {right:-100%;}
+    10% {right: 0%}
+    50% {right: 0%}
+    90% {left: 0%}
+    100% {left:-100%;}
+ }
+@keyframes animateright {
+    0% {right:-100%;}
+    10% {right: 0%}
+    50% {right: 0%}
+    90% {left: 0%}
+    100% {left:-100%;}
+}
